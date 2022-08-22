@@ -225,7 +225,7 @@
   <script type="text/javascript">
     bannedNames = ["timothy", "tim", "sid", "sidney", "the fake slim shady", "timmay", "timmy", "piflyer", "kim jung un"]
     function northKorea(name){
-      if(bannedNames.includes(name.toLowerCase())){
+      if(bannedNames.includes(name.toLowerCase()) && name !== ""){
         return "";
       }
       return name;
