@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>is a Creep</title>
+    <meta name="description" content="View the latest hit single, Creep Remix! Add in a name, and let the magic begin!">
+    <style media="screen">
+      html {
+        font-family: 'Roboto', sans-serif;
+      }
+      h1 {
+        font-size: 48px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 25px;
+        text-align: center;
+      }
+      h3 {
+        font-size: 22px;
+
+      }
+      input {
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        width: calc(90vw - 20px);
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: block;
+        outline: none;
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 650px;
+        background: #d4d4d4;
+      }
+      .output {
+        height: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        max-width: 650px;
+      }
+      .suggestbox {
+        height: auto;
+        border: none;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: block;
+        outline: none;
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 650px;
+      }
+      .suggestions {
+        height: 25px;
+        margin-bottom: 7.5px;
+        border: 4px solid #d4d4d4;
+        margin-top: 0px;
+        border-radius: 15px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        font-size: 20px;
+        line-height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 7.5px;
+        transition: 0.25s;
+      }
+      .suggestions:hover {
+        transform: scale(1.15);
+      }
+      .suggestions:active {
+        transform: scale(.95);
+      }
+      .warningchip {
+        height: auto;
+        min-height: 25px;
+        padding: 10px;
+        max-width: 500px;
+        width: 75vw;
+        border-radius: 15px;
+        margin-left: auto;
+        font-size: 25px;
+        line-height: 25px;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        color: white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 1s ease-out;
+        background: #ed0008;
+        position: fixed;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+        bottom: -325px;
+        z-index: 9999;
+      }
+      .warningchip:hover {
+        transition: all 0.25s;
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="warningchip" id="warningchip">
+    </div>
+    <h1><span class="nameout"></span> is a Creep</h1>
+    <h2>Enter a name of someone, and some magic will appear!</h2>
+    <input id="nameput" type="text" name="" value="">
+
+    <div class="output">
+      <h3><span class="nameout"></span> is a Creep</h3>
+      <p>When you were here before
+<br>
+Couldn't look you in the eye
+<br>
+You're just like an angel
+<br>
+Your skin makes me cry
+<br>
+You float like a feather
+<br>
+In a beautiful world
+<br>
+<span class="nameout"></span> wish <span class="nameout"></span> was special
+<br>
+You're so fuckin' special
+<br>
+But <span class="nameout"></span> is a creep
+<br>
+<span class="nameout"></span> is a weirdo
+<br>
+What the hell is <span class="nameout"></span> doin' here?
+<br>
+<span class="nameout"></span> don't belong here
+<br>
+<span class="nameout"></span> don't care if it hurts
+<br>
+<span class="nameout"></span> wanna have control
+<br>
+<span class="nameout"></span> want a perfect body
+<br>
+<span class="nameout"></span> want a perfect soul
+<br>
+<span class="nameout"></span> want you to notice
+<br>
+When <span class="nameout"></span> is not around
+<br>
+So fuckin' special
+<br>
+<span class="nameout"></span> wish <span class="nameout"></span> was special
+<br>
+But <span class="nameout"></span> is a creep
+<br>
+<span class="nameout"></span> is a weirdo
+<br>
+What the hell is <span class="nameout"></span> doin' here?
+<br>
+<span class="nameout"></span> don't belong here
+<br>
+She's running out the door (run)
+<br>
+She's running out
+<br>
+She run, run, run, run,
+<br>
+Run...
+<br>
+Whatever makes you happy
+<br>
+Whatever you want
+<br>
+You're so fuckin' special
+<br>
+<span class="nameout"></span> wish <span class="nameout"></span> was special
+<br>
+But <span class="nameout"></span> is a creep
+<br>
+<span class="nameout"></span> is a weirdo
+<br>
+What the hell is <span class="nameout"></span> doin' here?
+<br>
+<span class="nameout"></span> don't belong here
+<br>
+<span class="nameout"></span> don't belong here
+<br></p>
+    </div>
+    <h3 style="text-align: center;">Made with 😕 by <a href="https://thisistim.dev">Tim</a> | Idea from <a href="https://github.com/Sid220">Sid</a></h3>
+    <script type="text/javascript">
+      bannedNames = ["tim", "sid", "sidney", "the fake slim shady", "timothy", "timmay", "timmy", "piflyer"]
+      if (window.location.hash) {
+        var named = window.location.hash.substring(1);
+        document.getElementById("nameput").value = named;
+        if (bannedNames.includes(named.toLowerCase())) {
+          var named = "";
+          location.hash = named;
+          $(".nameout").html(named);
+          document.getElementById('nameput').value="";
+          var chipwarn = "You cannot trash talk Tim. This is Monsanto Censorship."
+          warningchip(chipwarn);
+          var named = document.getElementById("nameput").value;
+        }
+        else {
+          document.getElementById('nameput').addEventListener('input', function() {
+            var named = document.getElementById("nameput").value;
+            location.hash = named;
+            $(".nameout").html(named);
+          })
+          document.getElementById('nameput').dispatchEvent(new Event('input'));
+        }
+      }
+      else {
+        document.getElementById('nameput').addEventListener('input', function() {
+          var named = document.getElementById("nameput").value;
+          location.hash = named;
+          $(".nameout").html(named);
+        })
+      }
+      function warningchip(chipwarn) {
+        document.getElementById('warningchip').style.bottom = "25px";
+        document.getElementById('warningchip').innerHTML = chipwarn;
+        setTimeout(function (){
+          document.getElementById('warningchip').style.animation = "all 1s ease-in"
+          document.getElementById('warningchip').style.bottom = "-325px";
+        }, 4000);
+      }
+
+    </script>
+  </body>
+</html>
