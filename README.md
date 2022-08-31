@@ -1,2 +1,2 @@
 # Creep
-[Creep lyrics generator.](creep.thisistim.dev) Now open sourced.
+[Creep lyrics generator.](https://creep.thisistim.dev) Now open sourced.
